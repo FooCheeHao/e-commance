@@ -1,0 +1,130 @@
+/* 添加一些简单的样式 */
+body{
+    background-color: greenyellow;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px; /* 可选，设置网格项之间的间距 */
+    margin-right: 400px;
+}
+
+.product {
+    background-color: wheat;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.cart {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: wheat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* 确保购物车在其他元素之上 */
+}
+
+.cart2 {
+    top: 10px;
+    right: 10px;
+    width: 650px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: wheat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* 确保购物车在其他元素之上 */
+}
+
+.price {
+    color: blue; /* 你可以根据需要更改颜色 */
+    font-weight: bold;
+}
+.totalprice{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.modal {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    z-index: 1001; /* 确保在购物车之上 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+}
+
+.modal-content {
+    background-color: wheat;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#modal-image {
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#modal-image:hover {
+    transform: scale(3); /* 放大数倍 */
+    z-index: 1002; /* 确保放大图片在其他元素之上 */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.grid{
+    position: fixed;
+    margin-top: 350px;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: wheat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* 确保购物车在其他元素之上 */
+}
