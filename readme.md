@@ -1,1 +1,1 @@
-Simple prototype HaohaoShop
+Simple prototype HaohaoShore
