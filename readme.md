@@ -1,1 +1,2 @@
-Simple prototype HaohaoShore
+Simple prototype HaohaoStore
+![HaohaoStore](haohaostore.png)
