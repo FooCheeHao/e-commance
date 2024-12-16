@@ -1,2 +1,2 @@
 Simple prototype HaohaoStore
-![HaohaoStore](haohaostore.png)
+![HaohaoStore](/images/haohaostore.png)
